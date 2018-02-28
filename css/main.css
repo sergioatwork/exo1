@@ -67,3 +67,34 @@ html {
 *, *:before, *:after {
  box-sizing: inherit;
 }
+/***
+ *      _______ .______       __   _______  
+ *     /  _____||   _  \     |  | |       \ 
+ *    |  |  __  |  |_)  |    |  | |  .--.  |
+ *    |  | |_ | |      /     |  | |  |  |  |
+ *    |  |__| | |  |\  \----.|  | |  '--'  |
+ *     \______| | _| `._____||__| |_______/ 
+ *                                          
+ */
+ body{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 6rem 1fr 6rem;
+	grid-template-areas: "h"
+						 "i"
+						 "l"
+						 "f";
+  }
+  header{
+	  grid-area: h;
+  }
+  #insertBlog{
+	  grid-area: i;
+  }
+  #listeBlog{
+	  grid-area: l;
+  }
+  footer{
+	  grid-area: f;
+  }
+  
